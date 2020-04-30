@@ -7,11 +7,15 @@ import $ from 'jquery'
 import 'quill/dist/quill.snow.css'
 import 'quill/dist/quill.core.css'
 
+
+//On créer notre Quill avec les plugins
 Quill.register({
     'modules/imageUploader': ImageUploader,
     'modules/imageResize': ImageResize
 })
 
+
+//Options de la barre d'outils
 var toolbarOptions = [
     ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
     ['blockquote', 'code-block'],
@@ -34,6 +38,8 @@ var toolbarOptions = [
     ['clean']                                         // remove formatting button
 ];
 
+
+//Autres options dont l'upload d'images
 var options = {
     theme: 'snow',
     modules: {
@@ -62,8 +68,11 @@ var options = {
     }
 };
 
+//On lance l'éditeur dans la div editor-container
 var editor = new Quill('#editor-container', options)
 
+
+//Fonction pour envoyer le contenu vers le serveur
 $('#send').click(function () {
     var content = $('.ql-editor').html()
     $.ajax({
