@@ -17,6 +17,9 @@
     "dependencies": {
         "bootstrap": "^4.4.1",
         "jquery": "^3.5.0",
-        "popper.js": "^1.16.1"
+        "popper.js": "^1.16.1",
+        "quill": "^1.3.6",
+        "quill-image-resize-module": "github:khasburrahman/quill-image-resize-module-fix-imports-error",
+        "quill-image-uploader": "^1.2.1"
     }
 }

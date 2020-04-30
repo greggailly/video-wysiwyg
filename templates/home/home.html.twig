@@ -1,9 +1,15 @@
 {% extends 'base.html.twig' %}
 
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('home') }}
+{% endblock %}
+
 {% block body %}
     <div class="container mt-5">
-        <h3>Bienvenue sur notre site</h3>
-        <button class="btn btn-success" id="clickMe">Il faut cliquer ici !</button>
+        <h3>Editeur</h3>
+        <div id="editor-container">{{message.content|raw}}</div>
+        <button class="btn btn-success" id="send">Envoyer</button>
     </div>
     {{ encore_entry_script_tags('home') }}
 {% endblock %}
