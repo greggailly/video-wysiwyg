@@ -7,3 +7,5 @@ Vous avez trois branches:
 -Quill pour l'exemple QuillJS
 
 -CKEditor pour l'exemple CKEditor
+
+-CKEditor2 pour notre SOLUTION !! (a venir)
