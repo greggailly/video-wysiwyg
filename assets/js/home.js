@@ -1,5 +1,7 @@
-import $ from 'jquery';
+import ClassicEditor from 'ckeditor5-build-classic-simpleupload-imageresize'
 
-export default $("#clickMe").click(function send() {
-    console.log('clicked');
+ClassicEditor.create(document.querySelector('#editor'), {
+    simpleUpload: {
+        uploadUrl: '/image'
+    }
 })
